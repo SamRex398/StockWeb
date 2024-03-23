@@ -1,0 +1,298 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    padding: 1%;
+    background-color:rgb(0, 0, 0);
+    font-family: "Roboto" ;
+    font-style: italic;
+    font-weight: 400;
+    position: relative;
+}
+
+.head {
+    height: 90vh;
+    background-image:linear-gradient(
+        to left top,
+        rgba(79, 77, 77, 0.8),
+        rgba(144, 143, 143, 0.8)),
+     url(./img/cryptocurrency.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    clip-path: polygon(0 0,100% 0%,100% 65%,80% 100%,0 100%)
+}
+.logo-box {
+    background-color: rgba(228, 173, 31, 0.5);
+    padding: .8%;
+
+}
+.NavIcon{
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    width: 2rem;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .overlay a {
+    padding: .8rem;
+    text-decoration: none;
+    font-size: 3.6rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: goldenrod;
+    text-decoration: underline;
+    font-size: 5rem;
+    font-weight: bolder;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 6rem;
+  }
+
+.logo {
+    height: 5rem;
+    /* transform: rotate(270deg); */
+
+    animation-name: rotateLogo;
+    animation-duration: 2.5s;
+}
+.main-heading-box{
+    width: 92vw;
+    margin: 2.5%;
+    margin-top: 3.2%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+.primary-heading {
+    font-size: 5rem;
+    padding-top:2.5%;
+}
+.primary-heading > h1 {
+    font-size: 6.7rem;
+}
+.primary-heading > h3 {
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: "Satisfy" ;
+}
+.heading-image > img {
+    width: 40vw;
+}
+#main{
+    animation-name: moveLeft;
+    animation-duration: 2s;
+}
+.main_2{
+    animation-name: moveRight;
+    animation-duration: 2.2s;
+}
+.Head-Img{
+    animation-name: dropDown;
+    animation-duration: 2.5s;
+}
+.menu {
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 15px;
+    background-color:  rgba(209, 159, 35, 0.5);
+    padding: .5%;
+}
+li {
+    list-style-type: none;
+    display: contents;    
+}
+li:hover {
+    font-weight: 800;
+    cursor: pointer;
+    border: 5px;
+    border-color: red;
+    border-style: solid ;
+}
+.trading-image-div {
+    display: flex;
+    justify-content: space-around;
+    padding: .8%;
+}
+.secondary-trading-image {
+    width: 95rem;
+    height: 20rem;
+}
+
+ @keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+ }
+ @keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+ }
+ @keyframes rotateLogo{
+    0% {
+        transform: rotate(1deg);
+    }
+    60%{
+        transform: rotate(270deg);
+        background-color: rgba(248, 8, 8, 0.371);
+        border-radius: 5px;
+    }
+    /* 80%{
+        transform:rotate(15deg);
+    } */
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+ @keyframes dropDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    80%{
+        opacity: 0.5;
+        /* transform: translateY(0); */
+        transform: rotate(-5deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0);
+    }    
+ }
+
+.Stocks_list{
+    /* background-image:linear-gradient(
+        to left top,
+        rgba(5, 5, 5, 0.45),
+        rgba(5, 5, 5, 0.45)),
+     url(./img/list_bg.jpg); */
+     background-color: #0a112f;
+     background-size: contain;
+
+     font-family: "outfit";
+     padding: 1rem;
+ }
+
+ table{
+    border-collapse: collapse;
+    width: 99%;
+ }
+.Stocks_list_heading{
+    font-size: 1.7rem;
+    font-weight: bold; 
+    color: #6f6d6d; 
+    padding: .2rem;
+   
+}
+th{
+    padding: .3rem;
+}
+td{
+    padding: .2rem;
+}
+tr {
+    border-bottom: .1rem solid #c8c2c2;
+}
+.Stock{
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(201, 203, 227);
+}
+.Company{
+    padding: .35rem;
+}
+.Company-blue{
+    color: rgb(41, 41, 162);
+    font-weight: 570;
+    font-size: 1.45rem;
+    /* padding-top: .1rem; */
+}
+.Company-fullName{
+    text-decoration: underline;
+    text-decoration-style: dotted;   
+    text-decoration-color: rgb(21, 21, 219); 
+    font-size: .95rem;
+    /* padding-top: .3rem; */
+}
+.LastPrice{
+    font-weight: 340;
+}
+._7DReturn{
+    color: #818181;
+}
+._1YReturn{
+    color: #389244;
+}
+.MarketCap,
+.AnalystsTarget,
+.Valuation,
+.Growth,
+.Div-Yield{
+    font-size: medium;
+    font-weight: 300;
+}
+span{
+    padding-right: .25rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(21, 21, 219);
+    font-size: smaller;
+}
+.Industry{
+    color: rgb(41, 41, 162);
+}

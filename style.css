@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image:
+    linear-gradient(to right top, rgba(218, 165, 32, 0.8),rgba(0, 0, 0, 0.8)),
+    url(./img/Airdrop-crypto-11.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.image {
+    position: fixed;
+    left: 10%;
+    top: 28%;
+    transform: translate(-50%,-50%);
+    width: 29rem; 
+    animation-name: image_Change;
+    animation-duration: 10s;
+    /* animation-delay: 5s; */
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+.image2 {
+    position: fixed;
+    left: 28%;
+    top: 28%;
+    transform: translate(-50%,-50%);
+    width: 29rem; 
+    animation-name: image_Change;
+    animation-duration: 10s;
+    /* animation-delay: 5s; */
+    animation-iteration-count: infinite; 
+    z-index:1;   
+}
+.image3{
+    width: 29rem; 
+    z-index:1;   
+
+    position: fixed;
+    left: 47%;
+    top: 28%;
+    transform: translate(-50%,-50%);
+    
+    animation-name: image_Change;
+    animation-duration: 10s;
+    /* animation-delay: 5s; */
+    animation-iteration-count: infinite;  
+}
+.image4 {
+    width: 29rem; 
+    z-index:1;   
+
+    position: fixed;
+    left: 65%;
+    top: 28%;
+    transform: translate(-50%,-50%);
+    
+    animation-name: image_Change;
+    animation-duration: 10s;
+    /* animation-delay: 5s; */
+    animation-iteration-count: infinite; 
+}
+@keyframes image_Change {
+    0% {
+        transform: rotate(0deg);
+    }
+    /* 10% {
+        background-image: url(./imgs/1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;        
+    }
+    20% {
+        background-image: url(./imgs/2.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;        
+    }
+    30% {
+        background-image: url(./imgs/3.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;        
+    }
+    40% {
+        background-image: url(./imgs/4.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;        
+    }
+    50% {
+       
+    }
+    60% {
+        background-image: url(./imgs/6.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;        
+    }
+    70% {
+        background-image: url(./imgs/7.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;        
+    }
+    80% {
+        background-image: url(./imgs/8.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;        
+    }
+    90% {
+        background-image: url(./imgs/9.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;        
+    } */
+    100% {
+        transform: rotate(360deg);     
+    }
+
+
+}
+@keyframes Moving_dot {
+    from {
+        padding-left: .4rem;
+    }    
+    to {
+        padding: 0;
+    }
+}
+.h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.7rem;
+    color: whitesmoke;
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+}
+.load_dot_1 {
+    animation-name: Moving_dot;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+.load_dot_2 {
+    animation-name: Moving_dot;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+.load_dot_3 {
+    animation-name: Moving_dot;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+.index :active{
+    padding: 1.3rem;
+    z-index: 0;
+}
+.get_started {
+    width: 19rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    border-width: .4rem;
+    animation-name: button_appear;
+    animation-delay: 5s;
+    animation-duration: 15s;
+        
+}
+@keyframes button_appear{
+    0% {
+        color: rgb(168, 168, 170);
+        background-color: rgb(137, 137, 246);
+        border-color: transparent;        
+    }
+    25% {
+        color: #fffafa;
+        background-color: #0000ff;
+        border-color: #fffafa;
+    }
+    50% {
+        color: #fffafa;
+        background-color: #0000ff;
+        border-color: #fffafa;
+    }
+    75% {
+        color: #fffafa;
+        background-color: #0000ff;
+        border-color: #fffafa;
+    }
+    100% {
+        color: #fffafa;
+        background-color: #0000ff;
+        border-color: #fffafa;
+    }
+}
