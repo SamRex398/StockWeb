@@ -164,7 +164,7 @@ body{
     font-size: 1.8rem;
     font-weight: bold;
 
-    position: relative;
+    position: fixed;
     top: 80%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -175,7 +175,7 @@ body{
     border-width: .4rem;
     animation-name: button_appear;
     animation-delay: 5s;
-    animation-duration: 15s;
+    animation-duration: 25s;
         
 }
 @keyframes button_appear{
@@ -203,5 +203,14 @@ body{
         color: #fffafa;
         background-color: #0000ff;
         border-color: #fffafa;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image,.image2,.image3,.image4{
+        width: 10rem;
+    }
+    .media-adjust *{
+        top: 60%;
     }
 }
